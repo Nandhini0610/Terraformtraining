@@ -49,11 +49,6 @@ variable "egressrule" {
   ]
 }
 
-variable "vpcid" {
-  type        = string
-  default     = "vpc-565d352b"
-  description = "VPC ID where the resources needs to be provisioned"
-}
 variable "tag" {
   type = map(string)
   default = {
