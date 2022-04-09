@@ -8,7 +8,3 @@ output "privateip" {
   description = "Private_IP"
 }
 
-output "cars" {
-    value = [for s in local.cars : upper(s)]
-  }
-
