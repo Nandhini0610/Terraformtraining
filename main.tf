@@ -68,7 +68,6 @@ module "ec2instance" {
 resource "aws_security_group" "mysecuritygroup" {
   description = "MysecurityGroup"
   tags        = var.tag
-  vpc_id      = var.vpcid
   dynamic "ingress" {
     for_each = var.ingressrule
     content {
