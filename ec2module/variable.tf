@@ -5,15 +5,11 @@
 }*/
 
 variable "ami_name" {
-  type        = list(string)
-  default     = ["amzn2-ami-kernel-5.10-hvm-2.0.20220218.3-x86_64-gp2"]
-  description = "Name of the AMI given in AWS"
+  type        = string
+  default     = "ami-0c02fb55956c7d316"
+  description = "Name of the ami given in the aws"
 }
-variable "virtualizationtype" {
-  type        = list(string)
-  default     = ["hvm"]
-  description = "Type of Virtualization of the VM"
-}
+
 variable "instancetype" {
   type        = string
   default     = "t2.micro"
